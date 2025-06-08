@@ -1,0 +1,19 @@
+conditioning:
+  method: ps
+  params:
+    scale: 0.3
+
+data:
+  name: ffhq
+  root: ./data/samples/
+  brats_path: /srv/Data/playground_data/brats/brats_training_data/data_raw
+  h5_path: /srv/Data/playground_data/brats/h5_t1_t2
+
+measurement:
+  operator:
+    name: nonlinear_blur
+    opt_yml_path: /home/arunima/diffusion/diffusion-posterior-sampling/bkse/options/generate_blur/default.yml
+
+  noise: 
+    name: gaussian
+    sigma: 0.05

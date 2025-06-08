@@ -1,0 +1,21 @@
+conditioning:
+  method: ps
+  params:
+    scale: 2
+
+data:
+#   name: ffhq
+#   root: /srv/Data/playground_data/ffhq #### added this too
+#   data_path: /storage/users/ayantika/arunima/dataset/hcpData/HCP_1200
+  h5_path: /storage/Arunima/dataset/hcp_h5
+  mode: test
+
+measurement:
+  operator:
+    name: undersampling
+    accfactor: 8
+    masktype: poisson
+
+  noise: 
+    name: gaussian
+    sigma: 0.00

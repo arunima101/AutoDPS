@@ -1,0 +1,22 @@
+conditioning:
+  method: ps
+  params:
+    scale: 0.3
+
+data:
+#   name: ffhq
+#   root: /srv/Data/playground_data/ffhq #### added this too
+  brats_path: /srv/Data/playground_data/brats/brats_training_data/data_raw
+  h5_path: /srv/Data/playground_data/brats/h5_t1_t2
+
+measurement:
+  operator:
+    name: ghosting
+    no_of_ghosts: 10
+    axes: [1,2]
+    intensity: 1.4
+    restore: 0
+
+  noise: 
+    name: gaussian
+    sigma: 0.05

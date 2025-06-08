@@ -1,0 +1,26 @@
+conditioning:
+  method: ps
+  params:
+    scale: 2
+
+data:
+
+  h5_path: /storage/arunima/Arunima/dataset/hcp_h5
+  mode: test
+
+measurement:
+  operator:
+    name: motion+undersampling
+    accfactor: 8
+    masktype: poisson
+    xy_max: 1.5
+    theta_max: 0
+    num_motions: 5
+    center_fractions: 0.1
+    wave_num: 0
+    motion_type: randomize_harmonic
+    noise_lvl: 0
+
+  noise: 
+    name: gaussian # changed the implementation to rician.
+    sigma: 0.00

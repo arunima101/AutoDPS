@@ -1,0 +1,27 @@
+conditioning:
+  method: ps
+  params:
+    scale: 1
+
+data:
+
+  data_path: /storage/arunima/Arunima/dataset/mr_art/MR_ART
+  h5_path: /storage/arunima/Arunima/dataset/mr_art/h5
+  
+  mode: test
+  motion_level: 1
+
+measurement: #### NOT REQUIRED FOR REAL MOTION
+  operator:
+    name: motion_artifact_real
+    xy_max: 2 #2
+    theta_max: 0
+    num_motions: 5 #5
+    center_fractions: 0.1
+    wave_num: 0 #4
+    motion_type: randomize_harmonic
+    noise_lvl: 0
+
+  noise: 
+    name: gaussian # changed the implementation to rician
+    sigma: 0.00
