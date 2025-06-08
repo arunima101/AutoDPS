@@ -1,4 +1,4 @@
-# AutoDPS: An Unsupervised Diffusion Model Based Method for Multiple Degradation Removal in MRI [Paper Link](https://www.sciencedirect.com/science/article/abs/pii/S0169260725001014)
+# AutoDPS: An Unsupervised Diffusion Model Based Method for Multiple Degradation Removal in MRI [[Paper Link]](https://www.sciencedirect.com/science/article/abs/pii/S0169260725001014) Journal: CMPB 2025
 
 
 ## Abstract
